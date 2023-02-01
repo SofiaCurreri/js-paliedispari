@@ -27,12 +27,14 @@ do {
 
 
 const numUtente = parseInt(prompt("Inserisci un numero da 1 a 5"));
+console.log("Utente: ", numUtente);
 
 let numComputer;
-console.log(numRandom(numComputer));
+console.log("Random: ", numRandom(numComputer));
 const numRandomico = numRandom(numComputer);
 
 const somma = numUtente + numRandomico;
+console.log("Somma: ", somma);
 console.log(PariDispari(somma));
 
 if (((PariDispari(somma)) && (choice == "Pari")) || ((!PariDispari(somma)) && (choice == "Dispari"))) {

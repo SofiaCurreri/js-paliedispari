@@ -16,3 +16,22 @@ function checkPalindromo(parola) {
 
 const word = prompt("Inserisci una parola");
 console.log(checkPalindromo(word));
+
+
+
+
+//SOLUZIONE ALTERNATIVA
+// function checkPalindromo(parola) {
+//     let reverseWord = "";
+//     const lun = parola.length;
+//     for (let i = 0; i < lun; i++) {
+//         reverseWord = parola[i] + reverseWord;
+//     }
+//     if(parola == reverseWord) {
+//        return true;
+//      }
+//
+//      return false;
+// }
+
+//O ANCORA SI PUO USARE DECREMENTO E CONTROLLARE CHE PAROLA SCRITTA AL CONTRARIO E PAROLA DATA SIANO UGUALI

@@ -10,16 +10,19 @@ function numRandom(numero) {
     return numero;
 }
 
-function PariDispari(addizione) {
-    if (addizione % 2 == 0) {
+function PariDispari(somma) {
+    if (somma % 2 == 0) {
         return true;
-    } else {
-        return false;
     }
+
+    return false;
 }
 
+
+
+let choice;
 do {
-    var choice = prompt("Pari o Dispari?");
+    choice = prompt("Pari o Dispari?");
 } while ((choice != "Pari") && (choice != "Dispari"));
 
 
@@ -27,8 +30,9 @@ const numUtente = parseInt(prompt("Inserisci un numero da 1 a 5"));
 
 let numComputer;
 console.log(numRandom(numComputer));
+const numRandomico = numRandom(numComputer);
 
-const somma = numUtente + numRandom(numComputer);
+const somma = numUtente + numRandomico;
 console.log(PariDispari(somma));
 
 if (((PariDispari(somma)) && (choice == "Pari")) || ((!PariDispari(somma)) && (choice == "Dispari"))) {

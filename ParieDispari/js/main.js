@@ -30,8 +30,8 @@ const numUtente = parseInt(prompt("Inserisci un numero da 1 a 5"));
 console.log("Utente: ", numUtente);
 
 let numComputer;
-console.log("Random: ", numRandom(numComputer));
 const numRandomico = numRandom(numComputer);
+console.log("Random: ", numRandomico);
 
 const somma = numUtente + numRandomico;
 console.log("Somma: ", somma);
